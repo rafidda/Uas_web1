@@ -167,6 +167,29 @@ main {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan lebih besar saat hover */
 }
 
+/* Styles for the transaction table */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9; /* Warna latar belakang baris ganjil */
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #e9ecef; /* Warna latar belakang baris genap */
+}
+
+.table thead {
+    background-color: #ff0000; /* Warna latar belakang header tabel */
+    color: #fff; /* Warna teks header tabel */
+}
+
+.table tfoot {
+    background-color: #ff0000; /* Warna latar belakang footer tabel */
+    color: #fff; /* Warna teks footer tabel */
+}
+
+.table tbody tr:hover {
+    background-color: #d1e7dd; /* Warna latar belakang saat baris di-hover */
+}
+
 /* Footer Styles */
 footer {
     background: #213555; /* Warna biru untuk footer agar sesuai dengan navbar */
