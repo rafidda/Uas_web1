@@ -99,6 +99,8 @@
                 authButton.onclick = function() {
                     localStorage.removeItem('isLoggedIn');
                     localStorage.removeItem('username');
+                    localStorage.removeItem('transaksiList'); // Reset transaction data
+                    clearTransactionTable(); // Clear transaction table
                     window.location.href = 'index.html';
                 };
             } else {
@@ -164,6 +166,12 @@
 
         function formatRupiah(angka) {
             return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(angka);
+        }
+
+        function clearTransactionTable() {
+            const transaksiTableBody = document.getElementById('transaksiTableBody');
+            transaksiTableBody.innerHTML = ''; // Hapus data sebelumnya
+            document.getElementById('totalKeseluruhan').innerText = ''; // Hapus total keseluruhan
         }
     </script>
 </body>
