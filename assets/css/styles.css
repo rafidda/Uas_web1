@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Menggunakan font modern dan minimalis */
+    margin: 0;
+    padding: 0;
+    background-color: #e0e7ff; /* Warna latar belakang biru vintage */
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: #3b5998; /* Warna biru vintage untuk header */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    background-image: url('assets/img/header-bg.jpg'); /* Tambahkan background gambar */
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Header Slide Styles */
+.header-slide {
+    height: 100vh; /* Tampilkan gambar full header */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header-slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Tambahkan overlay gelap */
+}
+
+.header-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Pastikan konten berada di depan gambar */
+    text-align: center; /* Pusatkan teks */
+}
+
+/* Navigation Styles */
+nav {
+    background: #213555; /* Ubah warna navbar menjadi biru */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek 3D */
+    position: sticky; /* Buat navbar tetap di atas saat di-scroll */
+    top: 0;
+    z-index: 1000; /* Pastikan navbar berada di atas elemen lainnya */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-left: 20px;
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Tambahkan transisi untuk efek hover */
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1); /* Tambahkan efek zoom saat hover */
+    opacity: 0.8; /* Tambahkan efek transparansi saat hover */
+}
+
+.rounded-logo {
+    border-radius: 8px; /* Membuat sudut logo menjadi melingkar */
+}
+
+.navbar-right {
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Posisikan list navbar di bagian tengah */
+    flex: 1;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #f0f0f0; /* Warna font kontras agar mudah dibaca */
+    text-decoration: none;
+    padding: 8px 16px; /* Tambahkan padding untuk membuat link lebih besar */
+    border-radius: 4px; /* Tambahkan border-radius untuk sudut yang lebih halus */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Tambahkan transisi untuk efek hover */
+}
+
+nav a:hover {
+    background-color: #1a2a3a; /* Ubah warna latar belakang saat hover */
+    text-decoration: none;
+    transform: scale(1.1); /* Tambahkan efek zoom saat hover */
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Tambahkan transisi untuk efek hover */
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1); /* Tambahkan efek zoom saat hover */
+    opacity: 0.8; /* Tambahkan efek transparansi saat hover */
+}
+
+.rounded-logo {
+    border-radius: 8px; /* Membuat sudut logo menjadi melingkar */
+}
+
+.navbar-right {
+    margin-right: 20px;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    opacity: 1; /* Set opacity to 1 */
+    transform: none; /* Remove transform */
+    transition: none; /* Remove transition */
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Product Image Styles */
+.product-image {
+    width: 100%;
+    height: 200px; /* Tentukan tinggi gambar */
+    object-fit: cover; /* Pastikan gambar sesuai dengan ukuran */
+    padding: 10px; /* Tambahkan padding */
+    margin-bottom: 15px; /* Tambahkan margin bawah */
+    border-radius: 8px; /* Tambahkan border-radius untuk sudut yang lebih halus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek 3D */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Tambahkan transisi untuk efek hover */
+}
+
+.product-image:hover {
+    transform: scale(1.05); /* Tambahkan efek zoom saat hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan lebih besar saat hover */
+}
+
+/* Footer Styles */
+footer {
+    background: #213555; /* Warna biru untuk footer agar sesuai dengan navbar */
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    content: "© 2023 arif rafida rahman - 241011700826 - ujian akhir semester pemrograman web 1";
+}
+
+.small-footer {
+    padding: 5px 0; /* Kurangi padding untuk membuat footer lebih kecil */
+    font-size: 12px; /* Kurangi ukuran font untuk membuat footer lebih kecil */
+    background: #213555; /* Warna biru untuk footer agar sesuai dengan navbar */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end; /* Posisikan menu di sebelah kanan */
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    header, main, footer {
+        padding: 10px;
+    }
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1); /* Ubah warna border menjadi putih */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Ubah warna garis tiga menjadi putih */
+}
