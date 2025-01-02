@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -50,11 +51,14 @@
         }
         .profile-content img {
             max-width: 100%;
+            height: 350px; 
             border-radius: 10px;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            filter: blur(5px); /* Tambahkan efek blur */
         }
         .profile-content img:hover {
             transform: scale(1.05);
+            filter: none; 
         }
         .profile-content .specs {
             margin-top: 20px;
@@ -149,110 +153,34 @@
     <main class="profile-content">
         <div class="container">
             <section>
-                <h2>Spesifikasi Laptop yang Dijual</h2>
+                <h2>Informasi Mengenai Website Ini</h2>
                 <div class="row">
-                    <div class="col-md-6 specs">
-                        <h3>Apple MacBook Pro M2 Max</h3>
-                        <ul>
-                            <li>Prosesor: Apple M2 Max</li>
-                            <li>RAM: 32GB</li>
-                            <li>Penyimpanan: 1TB SSD</li>
-                            <li>Layar: 16-inch Retina Display</li>
-                            <li>Harga: Rp 80.000.000</li>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h3 class="mb-4">Website Ujian Akhir Semester</h3>
+                        <p>Website ini dibuat sebagai bagian dari ujian akhir semester untuk mata kuliah Pemrograman Web 1 semester 1. Tujuan dari website penjualan produk dengan akhiran nim 6, dengan website ini memungkinkan pengguna untuk melakukan transaksi pembelian suatu barang.</p>
+                        <ul class="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
+                            <li><strong>Nama :</strong> Arif Rafida Rahman</li>
+                            <li><strong>Kelas:</strong> CS01SIFE010</li>
+                            <li><strong>NIM :</strong> 241011700826</li>
+                            <li><strong>Mata Kuliah :</strong> Pemrograman Web 1</li>
                         </ul>
                     </div>
-                    <div class="col-md-6">
-                        <img src="assets/img/macbookpro.jpg" alt="Apple MacBook Pro M2 Max">
+                    <div class="col-lg-4 mx-auto col-md-6 col-12 d-flex align-items-end">
+                        <img src="assets/img/fotosaya.png" class="about-image img-fluid" alt="Foto Arif Rafida Rahman">
                     </div>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-md-6">
-                        <img src="assets/img/asuszephyrus g15.png" alt="ASUS ROG Zephyrus G15">
+                <div class="row about-third mt-5">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <h3>Cara Penggunaan Website</h3>
+                        <p>Untuk menggunakan website ini, pengguna dapat melihat daftar produk laptop yang tersedia di halaman beranda. Setelah memilih produk yang diinginkan, pengguna dapat melakukan transaksi pembelian dengan mengisi form transaksi. Data transaksi akan disimpan dan dapat dilihat di halaman daftar transaksi.</p>
                     </div>
-                    <div class="col-md-6 specs">
-                        <h3>ASUS ROG Zephyrus G15</h3>
-                        <ul>
-                            <li>Prosesor: AMD Ryzen 9</li>
-                            <li>RAM: 16GB</li>
-                            <li>Penyimpanan: 1TB SSD</li>
-                            <li>Layar: 15.6-inch QHD</li>
-                            <li>Harga: Rp 45.000.000</li>
-                        </ul>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <h3>Fitur Website</h3>
+                        <p>Website ini memiliki fitur untuk menampilkan daftar produk, melakukan transaksi pembelian, dan menampilkan informasi profil pembuat website. Pengguna juga dapat mengunduh daftar transaksi dalam format PDF.</p>
                     </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-md-6 specs">
-                        <h3>Lenovo ThinkPad X1 Extreme Gen 4</h3>
-                        <ul>
-                            <li>Prosesor: Intel Core i7</li>
-                            <li>RAM: 32GB</li>
-                            <li>Penyimpanan: 1TB SSD</li>
-                            <li>Layar: 15.6-inch 4K UHD</li>
-                            <li>Harga: Rp 55.000.000</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="assets/img/thinkpadz1extreme.jpg" alt="Lenovo ThinkPad X1 Extreme Gen 4">
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-md-6">
-                        <img src="assets/img/hpspectre.png" alt="HP Spectre x360 16">
-                    </div>
-                    <div class="col-md-6 specs">
-                        <h3>HP Spectre x360 16</h3>
-                        <ul>
-                            <li>Prosesor: Intel Core i7</li>
-                            <li>RAM: 16GB</li>
-                            <li>Penyimpanan: 512GB SSD</li>
-                            <li>Layar: 16-inch 4K UHD</li>
-                            <li>Harga: Rp 50.000.000</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-md-6 specs">
-                        <h3>Acer Predator Helios 300</h3>
-                        <ul>
-                            <li>Prosesor: Intel Core i7</li>
-                            <li>RAM: 16GB</li>
-                            <li>Penyimpanan: 1TB SSD</li>
-                            <li>Layar: 15.6-inch FHD</li>
-                            <li>Harga: Rp 45.000.000</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="assets/img/acerhelios.png" alt="Acer Predator Helios 300">
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-md-6">
-                        <img src="assets/img/razerblade.png" alt="Razer Blade 15">
-                    </div>
-                    <div class="col-md-6 specs">
-                        <h3>Razer Blade 15</h3>
-                        <ul>
-                            <li>Prosesor: Intel Core i7</li>
-                            <li>RAM: 16GB</li>
-                            <li>Penyimpanan: 1TB SSD</li>
-                            <li>Layar: 15.6-inch FHD</li>
-                            <li>Harga: Rp 60.000.000</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="about-me mt-5">
-                <h2>Tentang Saya</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <p><strong>Nama:</strong> Arif Rafida Rahman</p>
-                        <p><strong>NIM:</strong> 241011700826</p>
-                        <p><strong>Kelas:</strong> Pemrograman Web 1</p>
-                    </div>
-                    <div class="col-md-6">
-                        <p><strong>Program Studi:</strong> Sistem Informasi</p>
-                        <p><strong>Jurusan:</strong> Fakultas Ilmu Komputer</p>
-                        <p>Website ini sebagai bagian dari ujian akhir semester untuk mata kuliah Pemrograman Web 1 sebagai tugas ujian akhir semester.</p>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <h3>Pemrograman Web I</h3>
+                        <p>ini adalah tugas untuk ujian akhir semester saya, website penjualan yang memungkinkan pengguna melakukan transaksi, mengisi form, menampilkan action pada button mengaoutomisasi isian dan menyimpan data pada tabel tersedia, serta mendownload data invoice transaksi</p>
                     </div>
                 </div>
             </section>
