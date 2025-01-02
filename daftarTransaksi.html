@@ -231,13 +231,14 @@
                 bodyStyles: { fillColor: [255, 255, 255] },
                 alternateRowStyles: { fillColor: [240, 240, 240] },
                 footStyles: { fillColor: [0, 0, 0] },
-                styles: { fontSize: 8 }, // Sesuaikan ukuran font
+                styles: { fontSize: 8 }, // Sesuaikan ukuran font menjadi 10px
                 tableWidth: 'wrap', // Sesuaikan lebar tabel
                 didDrawPage: function (data) {
                     const totalKeseluruhan = document.getElementById('totalKeseluruhan').innerText;
                     const paymentInstruction = document.getElementById('paymentInstruction').innerText;
+                    doc.setFontSize(10); // Set ukuran font menjadi lebih kecil
                     doc.text(`Total Keseluruhan: ${totalKeseluruhan}`, 14, data.cursor.y + 10);
-                    doc.text(`Keterangan Pembayaran: ${paymentInstruction}`, 14, data.cursor.y + 20);
+                    doc.text(`Keterangan Pembayaran: ${paymentInstruction}`, 14, data.cursor.y + 20, { maxWidth: 180 }); // Buat keterangan menjadi kebawah jika melampaui fit dokumen PDF
                 }
             });
 
