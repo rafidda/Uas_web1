@@ -61,29 +61,27 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #213555;">
-        <div class="container px-4 px-lg-5">
-            <a href="index.html" class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #213555;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
                 <img src="assets/img/logo.png" alt="Logo" class="rounded-logo" style="width: 150px; height: 50px;">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ms-lg-4">
-                    <li class="nav-item"><a class="nav-link active" href="index.html" style="color: #f0f0f0;">Beranda</a></li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Beranda</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f0f0f0;">Transaksi</a>
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Transaksi</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="transaksi.html">Input Transaksi</a></li>
                             <li><a class="dropdown-item" href="daftarTransaksi.html">Daftar Transaksi</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="profil.html" style="color: #f0f0f0;">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
                 </ul>
-                <form class="d-flex navbar-right">
-                    <button class="btn btn-outline-light" type="button" id="authButton">Login</button>
-                </form>
+                <button class="btn btn-outline-light ms-3" type="button" id="authButton">Login</button>
             </div>
         </div>
     </nav>

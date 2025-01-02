@@ -55,7 +55,7 @@ header h1 {
 
 /* Navigation Styles */
 nav {
-    background: #213555; /* Ubah warna navbar menjadi biru */
+    background: #213555; /* Ubah warna navbar menjadi biru tua */
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -94,7 +94,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Posisikan list navbar di bagian tengah */
+    justify-content: flex-end; /* Posisikan list navbar di sebelah kanan */
     flex: 1;
 }
 
@@ -114,23 +114,6 @@ nav a:hover {
     background-color: #1a2a3a; /* Ubah warna latar belakang saat hover */
     text-decoration: none;
     transform: scale(1.1); /* Tambahkan efek zoom saat hover */
-}
-
-.navbar-brand img {
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Tambahkan transisi untuk efek hover */
-}
-
-.navbar-brand img:hover {
-    transform: scale(1.1); /* Tambahkan efek zoom saat hover */
-    opacity: 0.8; /* Tambahkan efek transparansi saat hover */
-}
-
-.rounded-logo {
-    border-radius: 8px; /* Membuat sudut logo menjadi melingkar */
-}
-
-.navbar-right {
-    margin-right: 20px;
 }
 
 /* Dropdown Menu Styles */
@@ -207,6 +190,28 @@ footer {
     background: #213555; /* Warna biru untuk footer agar sesuai dengan navbar */
 }
 
+/* Form Styles */
+.form-control {
+    border: none;
+    border-bottom: 2px solid #213555;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-bottom: 2px solid #1a2a3a;
+    box-shadow: none;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #213555;
+}
+
+.form-text {
+    color: #6c757d;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     nav {
@@ -237,4 +242,60 @@ footer {
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Ubah warna garis tiga menjadi putih */
+}
+
+/* Glassmorphism Navbar Styles */
+.navbar-light {
+    background-color: #213555; /* Ubah warna navbar menjadi biru tua */
+    backdrop-filter: none; /* Hilangkan efek blur */
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .nav-link,
+.navbar-light .navbar-toggler-icon {
+    color: #fff;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Smooth Dropdown Animation */
+.navbar-nav .dropdown-menu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    display: none;
+    background: white;
+    transition: visibility 0.3s, opacity 0.3s ease;
+}
+
+.navbar-nav .dropdown:hover > .dropdown-menu,
+.navbar-nav .dropdown-menu:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    min-width: 250px;
+    text-align: left;
+    padding-top: 20px;
+    box-shadow: 0px 3px 5px -1px #ccc;
+}
+
+.navbar-nav .dropdown-menu li {
+    clear: both;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    border-style: none;
+}
+
+.navbar-nav .dropdown-menu li a:hover {
+    padding-left: 10px;
+    border-left: 2px solid #3ca0e7;
+    transition: all 0.3s ease;
 }
