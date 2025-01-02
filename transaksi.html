@@ -30,7 +30,7 @@
     </style>
 </head>
 <body>
-    <!-- Navigation-->
+    <!-- Navigasi -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #213555;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -55,14 +55,14 @@
             </div>
         </div>
     </nav>
-    <!-- Header-->
+    <!-- Header -->
     <header class="py-5 text-center">
         <div class="container px-4 px-lg-5 my-5">
             <h1 class="display-4 fw-bolder">Input Transaksi</h1>
             <p class="lead fw-normal mb-0">Masukkan detail transaksi Anda</p>
         </div>
     </header>
-    <!-- Main Content-->
+    <!-- Konten Utama -->
     <main class="py-5">
         <div class="container px-4 px-lg-5">
             <form id="transaksiForm" class="row g-3 mx-auto" style="max-width: 600px;">
@@ -110,7 +110,7 @@
             </form>
         </div>
     </main>
-    <!-- Footer-->
+    <!-- Footer -->
     <footer class="small-footer" style="background-color: #213555;">
         <div class="container"><p class="m-0 text-center text-white">&copy;arif rafida rahman - 241011700826 - ujian akhir semester pemrograman web 1.</p></div>
     </footer>
@@ -198,7 +198,7 @@
                 authButton.onclick = function() {
                     localStorage.removeItem('isLoggedIn');
                     localStorage.removeItem('username');
-                    localStorage.removeItem('transaksiList'); // Reset transaction data
+                    localStorage.removeItem('transaksiList'); // Reset data transaksi
                     window.location.href = 'login.html';
                 };
             } else {

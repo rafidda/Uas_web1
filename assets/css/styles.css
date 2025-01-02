@@ -1,4 +1,4 @@
-/* General Styles */
+/* Gaya Umum */
 body {
     font-family: 'Roboto', sans-serif; /* Menggunakan font modern dan minimalis */
     margin: 0;
@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-/* Header Styles */
+/* Gaya Header */
 header {
     background: #3b5998; /* Warna biru vintage untuk header */
     color: #fff;
@@ -22,7 +22,7 @@ header h1 {
     margin: 0;
 }
 
-/* Header Slide Styles */
+/* Gaya Slide Header */
 .header-slide {
     height: 100vh; /* Tampilkan gambar full header */
     background-size: cover;
@@ -53,7 +53,7 @@ header h1 {
     text-align: center; /* Pusatkan teks */
 }
 
-/* Navigation Styles */
+/* Gaya Navigasi */
 nav {
     background: #213555; /* Ubah warna navbar menjadi biru tua */
     color: #fff;
@@ -116,7 +116,7 @@ nav a:hover {
     transform: scale(1.1); /* Tambahkan efek zoom saat hover */
 }
 
-/* Dropdown Menu Styles */
+/* Gaya Menu Dropdown */
 .dropdown-menu {
     opacity: 1; /* Set opacity to 1 */
     transform: none; /* Remove transform */
@@ -128,12 +128,12 @@ nav a:hover {
     transform: translateY(0);
 }
 
-/* Main Content Styles */
+/* Gaya Konten Utama */
 main {
     padding: 20px;
 }
 
-/* Product Image Styles */
+/* Gaya Gambar Produk */
 .product-image {
     width: 100%;
     height: 200px; /* Tentukan tinggi gambar */
@@ -150,7 +150,7 @@ main {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan lebih besar saat hover */
 }
 
-/* Styles for the transaction table */
+/* Gaya untuk tabel transaksi */
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: #f9f9f9; /* Warna latar belakang baris ganjil */
 }
@@ -173,7 +173,7 @@ main {
     background-color: #d1e7dd; /* Warna latar belakang saat baris di-hover */
 }
 
-/* Footer Styles */
+/* Gaya Footer */
 footer {
     background: #213555; /* Warna biru untuk footer agar sesuai dengan navbar */
     color: #fff;
@@ -190,7 +190,7 @@ footer {
     background: #213555; /* Warna biru untuk footer agar sesuai dengan navbar */
 }
 
-/* Form Styles */
+/* Gaya Form */
 .form-control {
     border: none;
     border-bottom: 2px solid #213555;
@@ -244,7 +244,7 @@ footer {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Ubah warna garis tiga menjadi putih */
 }
 
-/* Glassmorphism Navbar Styles */
+/* Gaya Glassmorphism Navbar */
 .navbar-light {
     background-color: #213555; /* Ubah warna navbar menjadi biru tua */
     backdrop-filter: none; /* Hilangkan efek blur */
@@ -264,7 +264,7 @@ footer {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* Smooth Dropdown Animation */
+/* Animasi Dropdown Halus */
 .navbar-nav .dropdown-menu {
     visibility: hidden;
     opacity: 0;

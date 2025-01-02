@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
         ride: 'carousel'
     });
 
-    // Redirect to login page if not logged in and trying to access a restricted page
+    // Redirect ke halaman login jika belum login dan mencoba mengakses halaman terbatas
     const restrictedPages = ['transaksi.html', 'daftarTransaksi.html', 'profil.html'];
     const currentPage = window.location.pathname.split('/').pop();
     const isLoggedIn = localStorage.getItem('isLoggedIn');
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = 'login.html';
     }
 
-    // Hide navbar on login page
+    // Sembunyikan navbar di halaman login
     if (currentPage === 'login.html') {
         document.querySelector('nav').style.display = 'none';
     }
@@ -148,8 +148,8 @@ function addToCart(product, price) {
 function logout() {
     localStorage.removeItem('isLoggedIn');
     localStorage.removeItem('username');
-    localStorage.removeItem('transaksiList'); // Reset transaction data
-    clearTransactionTable(); // Clear transaction table
+    localStorage.removeItem('transaksiList'); // Reset data transaksi
+    clearTransactionTable(); // Hapus tabel transaksi
     window.location.href = 'index.html';
 }
 
@@ -160,7 +160,7 @@ function clearTransactionTable() {
     }
 }
 
-// Clear transaction table on the transaction list page
+// Hapus tabel transaksi di halaman daftar transaksi
 if (document.getElementById('transaksiTableBody')) {
     clearTransactionTable();
 }
